@@ -2,9 +2,132 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Coach Max</title>
+    <link rel="stylesheet" type="text/css" href="css/css.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Coach Max - Coach sportif</title>
+
+    <!-- import fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
+<header>
+    <div id="header_logo">
+        <img src="pictures/logo_coachmax.png" alt="logo Coach Max">
+    </div>
+    <div id="header_navigation">
+        <nav id="header_navigation_navbar">
+            <ul id="header_navigation_navbar_ul">
+                <li class="header_navigation_navbar_ul_li"><a href="#about" class="principal_text">Home</a></li>
+                <li class="header_navigation_navbar_ul_li"><a href="#prestation" class="principal_text">Prestations</a></li>
+                <li class="header_navigation_navbar_ul_li"><a href="#contact" class="principal_text">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section id="about">
+    <div id="about_body">
+        <div id="about_body_txt">
+            <h1 class="title">Hello, moi c'est Max coach sportif certifié</h1>
+            <p class="principal_text">J’accompagne celles et ceux qui souhaitent retrouver la forme, gagner en énergie et se sentir mieux dans leur corps.<br>
+                Chaque programme est personnalisé, adapté à ton niveau, ton rythme et tes objectifs.<br>
+
+                Que tu sois débutant ou confirmé, je t’aide à progresser en toute sécurité, avec un suivi sérieux et motivant.</p>
+        </div>
+        <div id="about_body_btn">
+            <button class="primary">Réserve ta séance</button>
+        </div>
+    </div>
+</section>
+
+<section id="prestation">
+    <div id="prestation_body">
+        <div class="prestation_body_article" id="prestation_body_weight-loss">
+            <h2 class="title">🏃‍♂️ Perte de poids</h2>
+
+            <p class="prestation_body_article_prog">
+                Un accompagnement progressif et personnalisé pour perdre du poids durablement, sans frustration ni méthodes extrêmes.
+                Les séances combinent cardio, renforcement et conseils adaptés à ton mode de vie, afin de brûler les graisses tout en conservant ton énergie.
+
+                Objectif : retrouver une silhouette plus légère, plus tonique, et surtout te sentir mieux au quotidien.
+            </p>
+        </div>
+
+        <div class="prestation_body_article" id="prestation_body_mass-gain">
+            <h3 class="title">💪 Prise de masse</h3>
+
+            <p class="prestation_body_article_prog">
+                n programme conçu pour développer ta masse musculaire de manière équilibrée et contrôlée.
+                Les entraînements sont structurés pour stimuler efficacement les muscles, avec un suivi précis de la progression et des temps de récupération adaptés.
+
+                Objectif : gagner en volume, en force et en confiance, tout en respectant ton corps.
+            </p>
+        </div>
+
+        <div class="prestation_body_article" id="prestation_body_Muscle-strengthening">
+            <h3 class="title">🔥 Renforcement musculaire</h3>
+
+            <p class="prestation_body_article_prog">
+
+                Idéal pour améliorer ta condition physique globale, ce programme vise à renforcer l’ensemble du corps en profondeur.
+                Il permet de gagner en stabilité, en mobilité et en endurance musculaire, tout en réduisant le risque de blessures.
+
+                Objectif : un corps plus solide, plus fonctionnel et plus performant au quotidi
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div id="contact_body">
+        <div id="contact_body_left">
+            <div id="contact_body_left_txt">
+                <h4 class="title">Le changement ne se fait pas seul.</h4>
+                <p>Je suis là pour t’accompagner, pas à pas.</p>
+            </div>
+        </div>
+        <div id="contact_body_right">
+            <form>
+                <div id="form_name">
+                    <input type="text" id="last-name" placeholder="John" required>
+                    <input type="text" id="first-name" placeholder="Doe" required>
+                </div>
+                <div id="form_mail">
+                    <input type="email" id="email" placeholder="john.doe@coach_max.fr" required>
+                </div>
+                <div id="form_txt">
+                    <textarea cols="46" rows="8" placeholder="Votre message" required></textarea>
+                </div>
+                <button id="form_btn" class="btn">Envoyer</button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <div id="footer_body">
+        <div class="footer_body_article">
+            <ul class="footer_body_article_ul">
+                <li class="footer_body_article_ul_li"><a href="#home">Home</a></li>
+                <li class="footer_body_article_ul_li"><a href="#prestation">Prestation</a></li>
+                <li class="footer_body_article_ul_li"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer_body_article">
+            <p>© 2026 Coach Max — Tous droits réservés
+                Mentions légales • Politique de confidentialité</p>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
