@@ -32,13 +32,15 @@ header{
 section{
     background-color: #F1F5F9;
 }
+.principal_bck{
+    background-color: #FFFFFF;
+}
 .bck_section{
     background-color: #F1F5F9;
 }
 .title{
     font-family: "Poppins", sans-serif;
     color: #0F172A;
-    font-size: 42px;
 }
 .principal_text{
     color: #1E293B;
@@ -46,33 +48,37 @@ section{
     font-size: 18px;
 }
 .secondary_text{
-    color: #64748B
+    color: #64748B;
+    line-height: 1.5;
 }
 .primary{
     background-color: #2563EB;
     font-size: 18px;
     font-weight: bolder;
 }
+
+.btn_submit{
+    padding: 25px;
+    border-radius: 15px;
+    border: none;
+    color: white;
+}
+
+.btn_submit:hover{
+    opacity: 1.5;
+    background-color: red;
+}
 /* specific content */
 
 /* navbar */
-#header_logo img{
+#header_logo img, #header_navigation, #header_navigation_navbar, #header_navigation_navbar ul{
     height: 100%;
 }
-
 #header_navigation{
     width: 40%;
-    height: 100%;
-
-}
-#header_navigation_navbar {
-    width: 100%;
-    height: 100%;
 }
 #header_navigation_navbar ul{
     display: flex;
-    height: 100%;
-    width: 100%;
     justify-content: space-around;
     align-items: center;
 }
@@ -92,17 +98,24 @@ section{
     height: 80vh;
     justify-items: center;
 }
-
-#about_body{
+#about_body::before{
     background-image: url("../pictures/coach_max.png");
     background-repeat: no-repeat;
     background-size: cover;
+}
+#about_body{
     height: 100%;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1%;
 }
+#about_body > * {
+    position: relative;
+    z-index: 1;
+}
+
 #about_body_txt{
     padding: 20px;
     height: 80%;
@@ -114,4 +127,38 @@ section{
 }
 #about_body_txt p{
     margin-top: 15%;
+}
+
+
+/* Section prestaiton */
+#prestation{
+    width: 100vw;
+    height: 35vh;
+    justify-items: center;
+}
+
+#prestation_body{
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+}
+
+.prestation_body_article{
+    width: 600px;
+    margin: 35px;
+    height: 80%;
+    border-radius: 15px;
+}
+.prestation_body_article_title, .prestation_body_article_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.prestation_body_article_title{
+    height: 20%;
+}
+.prestation_body_article_text{
+    height: 80%;
+    text-align: center;
 }
